@@ -1,0 +1,18 @@
+{
+  "name": "@belight/howtonpm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "how-to-npm",
+    "test": "yarn start verify"
+  },
+  "dependencies": {
+    "how-to-npm": "^2.4.2"
+  },
+  "devDependencies": {
+      "@linclark/pkg":"1.0.2"
+  },
+  "author": "",
+  "description": ""
+}

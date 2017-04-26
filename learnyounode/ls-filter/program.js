@@ -1,9 +1,10 @@
 const fs = require('fs');
+const path = require('path');
 
-var lsFilter = function(path,type){
-    fs.readdir(path,function(err,files){
-        files.filter(file=>{
-            return file.split()
-        })
+fs.readdir('./',function(err,files){
+    files.filter(file=>{
+        return path.extname(file) === `.${type}`;
+    }).forEach(filename=>{
+        console.log(filename);
     })
-}
+})
